@@ -1,0 +1,83 @@
+﻿@model HeaderButtonsModel
+@inject Nop.Core.IWebHelper webHelper
+
+
+<div class="nav-icon">
+    <ul>
+
+        @if (Model.IsAuthenticated)
+        {
+            //upload and show customer photo here
+            <li class="onhover-div user-icon">
+                <a href="@Url.RouteUrl("CustomerInfo")"><img src="~/themes/guptodhon/assets/images/icon/user.png" alt="Shopper" class="user-img"></a>
+                <i class="ti-user mobile-icon"></i>
+            </li>
+        }
+        else
+        {
+            var returnUrl = webHelper.GetRawUrl(Context.Request);
+            <li class="onhover-div user-icon">
+                <a href="@Url.RouteUrl("Login", new { returnUrl })"><img src="~/themes/guptodhon/assets/images/icon/user.png" alt='Shopper' class="user-img"></a>
+                <i class="ti-user mobile-icon"></i>
+            </li>
+
+        }
+
+        @*@if (Model.WishlistEnabled)
+        {
+            <li class="onhover-div wishlist-icon">
+                <a href="@Url.RouteUrl("Wishlist")"><img src="~/themes/guptodhon/assets/images/icon/wishlist.png" alt="" class="wishlist-img"></a>
+                <i class="ti-heart mobile-icon"></i>
+                <span class="wishlist-qty d-inline-block">@T("Wishlist.HeaderQuantity", Model.WishlistItems)</span>
+            </li>
+        }*@
+        @if (Model.ShoppingCartEnabled)
+        {
+            <li class="onhover-div cart-icon">
+                <a href="@Url.RouteUrl("ShoppingCart")"><img src="~/themes/guptodhon/assets/images/icon/cart.png" alt='@T("ShoppingCart")' class="cart-image"></a>
+                <i class="ti-shopping-cart mobile-icon"></i>
+                <span class="cart-qty d-inline-block">@T("ShoppingCart.HeaderQuantity", Model.ShoppingCartItems)</span>
+            </li>
+        }
+
+
+        @if (Model.WishlistEnabled)
+        {
+            <li class="onhover-div wishlist-icon">
+                <a href="#"><img src="~/themes/guptodhon/assets/images/icon/bazaar.png" alt="Daily & Monthly Bazaar" class="wishlist-img"></a>
+                <i class="ti-heart mobile-icon"></i>
+            </li>
+        }
+
+        @*@if (Model.AllowPrivateMessages && !string.IsNullOrEmpty(Model.AlertMessage))
+        {
+            //new private message notification
+            <script asp-location="Footer">
+            $(document).ready(function () {
+                displayPopupNotification('@Html.Raw(JavaScriptEncoder.Default.Encode(Model.AlertMessage))', 'success', false);
+            });
+            </script>
+        }*@
+        @if (Model.ShoppingCartEnabled)
+        {
+            <script asp-location="Footer">
+                $(document).ready(function () {
+                    $('.header-links-wrapper').on('mouseenter', '#topcartlink', function () {
+                        $('#flyout-cart').addClass('active');
+                    });
+                    $('.header-links-wrapper').on('mouseleave', '#topcartlink', function () {
+                        $('#flyout-cart').removeClass('active');
+                    });
+                    $('.header-links-wrapper').on('mouseenter', '#flyout-cart', function () {
+                        $('#flyout-cart').addClass('active');
+                    });
+                    $('.header-links-wrapper').on('mouseleave', '#flyout-cart', function () {
+                        $('#flyout-cart').removeClass('active');
+                    });
+                });
+            </script>
+        }
+
+
+    </ul>
+</div>

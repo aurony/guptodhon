@@ -1,0 +1,24 @@
+﻿@model SocialModel
+<ul class="networks" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="url" href="@Url.RouteUrl("HomePage")"/>
+    @if (!string.IsNullOrEmpty(Model.FacebookLink))
+    {
+        <li><a href="@Model.FacebookLink" itemprop="sameAs" target="_blank"><i class="fa fa-facebook" title='@T("Footer.FollowUs.Facebook")' aria-hidden="true"></i></a></li>
+
+    }
+    @if (!string.IsNullOrEmpty(Model.TwitterLink))
+    {
+        <li><a href="@Model.TwitterLink" itemprop="sameAs" target="_blank"><i class="fa fa-twitter" title='@T("Footer.FollowUs.Twitter")' aria-hidden="true"></i></a></li>
+    }
+    @if (Model.NewsEnabled)
+    {
+        <li><a href="@Url.RouteUrl("NewsRSS", new {languageId = Model.WorkingLanguageId})" itemprop="sameAs" target="_blank"><i class="fa fa-rss" title='@T("Footer.FollowUs.RSS")' aria-hidden="true"></i></a></li>
+
+    }
+    @if (!string.IsNullOrEmpty(Model.YoutubeLink))
+    {
+        <li><a href="@Model.YoutubeLink" itemprop="sameAs" target="_blank"><i class="fa fa-youtube" title='@T("Footer.FollowUs.Youtube")' aria-hidden="true"></i></a></li>
+
+    }
+</ul>
+

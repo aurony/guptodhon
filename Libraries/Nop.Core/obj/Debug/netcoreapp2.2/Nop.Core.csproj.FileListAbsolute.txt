@@ -1,0 +1,10 @@
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\bin\Debug\netcoreapp2.2\Nop.Core.deps.json
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\bin\Debug\netcoreapp2.2\Nop.Core.runtimeconfig.json
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\bin\Debug\netcoreapp2.2\Nop.Core.runtimeconfig.dev.json
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\bin\Debug\netcoreapp2.2\Nop.Core.dll
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\bin\Debug\netcoreapp2.2\Nop.Core.pdb
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\obj\Debug\netcoreapp2.2\Nop.Core.csprojAssemblyReference.cache
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\obj\Debug\netcoreapp2.2\Nop.Core.AssemblyInfoInputs.cache
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\obj\Debug\netcoreapp2.2\Nop.Core.AssemblyInfo.cs
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\obj\Debug\netcoreapp2.2\Nop.Core.dll
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Core\obj\Debug\netcoreapp2.2\Nop.Core.pdb

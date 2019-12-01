@@ -1,0 +1,6 @@
+﻿{
+  "DataProvider": "sqlserver",
+  //"DataConnectionString": "Data Source=XSERVER;Initial Catalog=Guptodhon;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=3p3200170@",
+  "DataConnectionString": "Data Source=.\\sqlexpress;Initial Catalog=guptodhon;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=3p3200170",
+  "RawDataSettings": {}
+}

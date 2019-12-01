@@ -1,0 +1,11 @@
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\bin\Debug\netcoreapp2.2\Nop.Data.deps.json
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\bin\Debug\netcoreapp2.2\Nop.Data.dll
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\bin\Debug\netcoreapp2.2\Nop.Data.pdb
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\bin\Debug\netcoreapp2.2\Nop.Core.dll
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\bin\Debug\netcoreapp2.2\Nop.Core.pdb
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\obj\Debug\netcoreapp2.2\Nop.Data.csprojAssemblyReference.cache
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\obj\Debug\netcoreapp2.2\Nop.Data.AssemblyInfoInputs.cache
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\obj\Debug\netcoreapp2.2\Nop.Data.AssemblyInfo.cs
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\obj\Debug\netcoreapp2.2\Nop.Data.csproj.CopyComplete
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\obj\Debug\netcoreapp2.2\Nop.Data.dll
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Data\obj\Debug\netcoreapp2.2\Nop.Data.pdb

@@ -1,0 +1,169 @@
+﻿
+@await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderBefore })
+<header class="header-top">
+    <div class="lzd-links-bar">
+        @await Component.InvokeAsync("TaxTypeSelector")
+        @await Component.InvokeAsync("CurrencySelector")
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderSelectors })
+
+        @await Component.InvokeAsync("HeaderLinks")
+        <div class="top-links-item">
+            @await Component.InvokeAsync("LanguageSelector")
+        </div>
+
+    </div>
+</header>
+
+
+<!-- header section start -->
+<header class="header-4">
+    <div class="mobile-fix-header">
+    </div>
+    <div class="container">
+        <div class="row header-content">
+            <div class="col-12">
+                <div class="left-part">
+                    <div class="navbar">
+                        <a href="javascript:void(0)" onclick="openNav()">
+                            <div class="bar-style"><i class="fa fa-bars sidebar-bar" aria-hidden="true"></i></div>
+                        </a>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="sidebar-overlay" onclick="closeNav()"></a>
+                            <nav class="">
+                                <div onclick="closeNav()">
+                                    <div class="sidebar-back text-left"><i class="fa fa-angle-left pr-2" aria-hidden="true"></i> Back</div>
+                                </div>
+                                @await Component.InvokeAsync("TopMenu")
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="brand-logo">
+                        @await Component.InvokeAsync("Logo")
+                    </div>
+                </div>
+                <div class="nav-right">
+
+                    <div class="search-box store-search-box search-bar" itemscope itemtype="http://schema.org/WebSite">
+                        <meta itemprop="url" content="@Url.RouteUrl("HomePage")" />
+                        <meta itemprop="name" content="Guptodhon.com.bd" />
+                        @await Component.InvokeAsync("SearchBox")
+
+                        @*<input class="search__input" type="text" placeholder="Search a product 01">
+            <div class="search-icon "></div>*@
+                        <i class="ti-search mobile-icon-search" onclick="openSearch()"></i>
+                        <div id="search-overlay" class="search-overlay">
+                            <div>
+                                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                                <div class="overlay-content">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Search a Product in form">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @await Component.InvokeAsync("HeaderButtons")
+
+                    @*<div class="nav-icon">
+            <ul>
+                <li class="onhover-div user-icon">
+                    <a href="@Url.RouteUrl("CustomerInfo")"><img src="~/themes/guptodhon/assets/images/icon/user.png" alt="" class="user-img"></a>
+                    <i class="ti-user mobile-icon"></i>
+                </li>
+                <li class="onhover-div wishlist-icon">
+                    <a href="@Url.RouteUrl("Wishlist")"><img src="~/themes/guptodhon/assets/images/icon/wishlist.png" alt="" class="wishlist-img"></a>
+                    <i class="ti-heart mobile-icon"></i>
+                </li>
+                <li class="onhover-div cart-icon">
+                    <a href="@Url.RouteUrl("ShoppingCart")"><img src="~/themes/guptodhon/assets/images/icon/cart.png" alt="" class="cart-image"></a>
+                    <i class="ti-shopping-cart mobile-icon"></i>
+
+                    <div class="cart">
+                        <span>2 item</span>
+                        <h6>my cart</h6>
+                    </div>
+                </li>
+            </ul>
+        </div>*@
+
+                </div>
+            </div>
+            <div class="header-shadow">
+                <div class="left-shadow">
+                    <img src="~/themes/guptodhon/assets/images/left.png" alt="" class=" img-fluid">
+                </div>
+                <div class="right-shadow">
+                    <img src="~/themes/guptodhon/assets/images/right.png" alt="" class=" img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+@*<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <div class="header-links-wrapper">
+        @await Component.InvokeAsync("HeaderLinks")
+        @await Component.InvokeAsync("FlyoutShoppingCart")
+    </div>
+</div>*@
+
+
+
+@await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMiddle })
+@*<div class="header-lower">
+    <div class="row">
+        <div class="col-2 col-sm-2 col-md-2 d-lg-none d-xl-none">
+            <div class="mobile-menu-icon"><span style="cursor:pointer" class="toggle" onclick="openNavMobile()">&nbsp;</span></div>
+        </div>
+        <div class="logo col-8 col-sm-8 col-md-8 col-lg-4 col-xl-4">
+            <div class="header-logo">
+                
+            </div>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 d-lg-none d-xl-none">
+            <div class="search-icon"></div>
+        </div>
+        <div class="col-lg-8 col-xl-8 s-box">
+            
+        </div>
+    </div>
+</div>*@
+@await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderAfter })
+
+<script asp-location="Footer">
+    $(document).ready(function () {
+        /*js for Search box toogle in mobile */
+        $(".search-icon").click(function () {
+            $(".header-lower .search-box").slideToggle();
+            $(".header-lower .header-links-wrapper").slideUp();
+        });
+
+        /*js to close account links & search when clicked on menu */
+        $("#toggle .menu-icon").click(function () {
+            $(".header-lower .search-box").slideUp();
+            $(".header-lower .header-links-wrapper").slideUp();
+        });
+    });
+</script>

@@ -1,0 +1,13 @@
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\bin\Debug\netcoreapp2.2\Nop.Services.deps.json
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\bin\Debug\netcoreapp2.2\Nop.Services.dll
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\bin\Debug\netcoreapp2.2\Nop.Services.pdb
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\bin\Debug\netcoreapp2.2\Nop.Core.dll
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\bin\Debug\netcoreapp2.2\Nop.Data.dll
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\bin\Debug\netcoreapp2.2\Nop.Core.pdb
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\bin\Debug\netcoreapp2.2\Nop.Data.pdb
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\obj\Debug\netcoreapp2.2\Nop.Services.csprojAssemblyReference.cache
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\obj\Debug\netcoreapp2.2\Nop.Services.AssemblyInfoInputs.cache
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\obj\Debug\netcoreapp2.2\Nop.Services.AssemblyInfo.cs
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\obj\Debug\netcoreapp2.2\Nop.Services.csproj.CopyComplete
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\obj\Debug\netcoreapp2.2\Nop.Services.dll
+D:\Projects\Guptodhon\4.2\src\Libraries\Nop.Services\obj\Debug\netcoreapp2.2\Nop.Services.pdb
